@@ -115,9 +115,6 @@ evenFinder(nums)
 
 
 
-
-
-
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
@@ -132,7 +129,17 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 //Code Here
 
-
+function divider(numbersArray) {
+  let evenArr = []
+  let oddArr  = []
+  let dividerArr = [evenArr, oddArr]
+  for (i = 0 ; i < numbersArray.length ; i++){
+    numbersArray[i] % 2 === 0
+    ? evenArr.push(numbersArray[i])
+    : oddArr.push(numbersArray[i])
+  }
+  return dividerArr
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -154,7 +161,16 @@ var getRandomArbitrary = function() {
 
 //Code Here
 
-
+function finder(array) {
+  let randomNumber = getRandomArbitrary;
+  for (i = 1 ; i < array.length ; i++) {
+    if (randomNumber === array[i]) {
+      return true
+    } else {
+      return false
+    }
+  }
+}
 
 ////////// PROBLEM 8 //////////
 
