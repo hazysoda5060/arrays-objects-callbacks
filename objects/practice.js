@@ -74,12 +74,15 @@ favoriteThings.book = 'Harry Potter';
 
 //Code here
 
-let backpack = {
+let backPack = {
 
 }
 
 let item = 'firstPocket';
 
+backPack[item] = 'chapstick'
+
+backPack.color = 'black'
 
 
 /*
@@ -87,6 +90,8 @@ let item = 'firstPocket';
 */
 
 //Code here
+
+console.log(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -117,6 +122,9 @@ var user2 = {
 
 //Code Here
 
+user2.name = 'Bryan G. Smith'
+user2.email = 'bryan.smith@devmounta.in'
+
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
 
@@ -135,9 +143,22 @@ var user2 = {
 
 //Code Here
 
+let methodCollection = {
+  alertHello: function alertHello() {
+    return alert('hello')
+  },
+  logHello: function logHello() {
+    return console.log('hello')
+  }
+}
+
 /*
   Now call your alertHello and logHello methods.
 */
+
+// methodCollection.firstfunc();
+
+methodCollection.secondfunc();
 
 //Code Here
 
@@ -150,6 +171,15 @@ var user2 = {
 
 //Code Here
 
+function makePerson(name, birthday, ssn) {
+  let personObj = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+  return personObj
+}
+
 ////////// PROBLEM 7 //////////
 
 /*
@@ -158,3 +188,12 @@ var user2 = {
 */
 
 //Code Here
+
+function makeCard(cardNumber, expirationDate, securityCode) {
+  let creditCard = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+  return creditCard
+}

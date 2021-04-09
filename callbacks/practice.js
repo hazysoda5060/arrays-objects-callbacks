@@ -137,7 +137,7 @@ contains(names, 'Colt', function(result){
 
   function uniq (array, callback){
     for(let i=0;i<array.length; i++){
-      for (let j=1+i; j<array.length; j++){
+      for(let j=1+i; j<array.length; j++){
         if(array[i]===array[j]) {
          array.splice(j, 1)
          j--
